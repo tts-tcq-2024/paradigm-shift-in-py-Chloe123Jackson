@@ -1,5 +1,5 @@
 def battery_temp_is_ok(temperature):
-  if temperature < 0 or temperature > 45:
+  if not 0<temperature<45:
     print('Temperature is out of range!')
     return False
   return True
