@@ -30,15 +30,15 @@ def print_colour_code_table():
     table=[['Pair number','Major colour','Minor colour']]
     pair_number=1
     row=[]
-    for major_colour in MAJOR_COLORS:
-        for minor_colour in MINOR_COLORS:
-            row.append(pair_number)
-            row.append(major_colour)
-            row.append(minor_colour)
-            table.append(row)
-            pair_number+=1
-            row=[]
-            print(table)
+    # for major_colour in MAJOR_COLORS:
+    #     for minor_colour in MINOR_COLORS:
+    #         row.append(pair_number)
+    #         row.append(major_colour)
+    #         row.append(minor_colour)
+    #         table.append(row)
+    #         pair_number+=1
+    #         row=[]
+    #         print(table)
     for row in table:
         print('--------------------------------------------')
         print('| {:^11} | {:^12} | {:^12} |'.format(*row))
