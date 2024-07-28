@@ -3,6 +3,7 @@ mapping=['Temperature','SOC','Charge rate']
 
 def battery_temp_is_ok(temperature,language):
   message=deliver_range_message(0,temperature,language)
+  print(message)
   print_message(message)
   return check_out_of_range(message)
   
@@ -29,10 +30,11 @@ def deliver_range_message(index_number,variable_value,language):
 def check_out_of_range(message):
   if message in range(0,3):
     return False
-  return True
+  else:
+    return True
   
 def print_message(message):
-  if not check_out_of_range(message):
+  if check_out_of_range(message)==False:
     print(mapping[message], "Out of range")
   else:
     print(message)
