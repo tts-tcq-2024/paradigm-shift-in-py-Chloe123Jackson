@@ -22,9 +22,7 @@ def deliver_range_message(index_number,variable_value,language):
     if variable_value<x:
         return range_list[index_number][language][range_list[index_number][0].index(x)]
         break
-    else:
-        return index_number
-        break
+  return index_number
       
 def check_out_of_range(message):
   if message in range(0,3):
@@ -36,7 +34,6 @@ def print_message(message):
     print(mapping[message], "Out of range")
   else:
     print(message)
-    return True
   
 def battery_is_ok(temperature, soc, charge_rate,language):
   Battery_ok=battery_temp_is_ok(temperature,language)
