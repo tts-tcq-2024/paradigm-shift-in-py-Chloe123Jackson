@@ -1,4 +1,4 @@
-range_list=[[[0,2.251,42.749,45],['Temperature out of range','Temperature near minimum','','Temperature near maximum']],[[20,24.1,75.9,80],['Soc out of range','Approaching discharge','','Approaching charge-peak']],[[0,0.0039,0.08],['charge rate out of range','charge reat near minimum','','charge rate near maximum']]]
+range_list=[[[0,2.251,42.749,45],[0,'Temperature near minimum','','Temperature near maximum']],[[20,24.1,75.9,80],[0,'Approaching discharge','','Approaching charge-peak']],[[0,0.0039,0.08],[0,'charge reat near minimum','','charge rate near maximum']]]
 error_message="Out of range"
 def battery_temp_is_ok(temperature):
   message=check_range(0,temperature)
