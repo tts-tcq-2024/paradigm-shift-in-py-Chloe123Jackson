@@ -20,7 +20,7 @@ def check_out_of_range(message):
 def check_range(index_number,variable_value):
   for x in range_list[index_number][0]:
     if variable_value<x:
-        return range_list[index_number][1][range_list[index_number][0].index(x)])
+        return range_list[index_number][1][range_list[index_number][0].index(x)]
         break
     else:
         return variable_value
