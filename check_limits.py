@@ -20,9 +20,11 @@ def battery__cr_is_ok(charge_rate,language):
 def deliver_range_message(index_number,variable_value,language):
   for x in range_list[index_number][0]:
     if variable_value<x:
-        return range_list[index_number][language][range_list[index_number][0].index(x)]
-        break
-  return index_number
+      y=range_list[index_number][language][range_list[index_number][0].index(x)]
+      break
+    else:
+      y=index_number
+  return y
       
 def check_out_of_range(message):
   if message in range(0,3):
