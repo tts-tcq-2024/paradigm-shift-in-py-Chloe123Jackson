@@ -1,4 +1,4 @@
-range_list=[[[0,2.251,42.749,45],[0,'Temperature near the minimum','','Temperature near the maximum'],[0,'Temperatur nahe dem Minimum','','Temperatur nahe dem Maximum']],[[20,24.1,75.9,80],[1,'Approaching discharge','','Approaching charge-peak'],[1,'Entladung nähert sich','','Annäherung an den Ladespitzenwert']],[[0,0.0039,0.08],[2,'charge rate near minimum','','charge rate near maximum'],[2,'Laderate nahe Minimum','','Laderate nahe Maximum']]]
+range_list=[[[0,2.251,42.749,45],[0,'Temperature near the minimum','','Temperature near the maximum'],[0,'Temperatur nahe dem Minimum','','Temperatur nahe dem Maximum']],[[20,24.1,75.9,80],[1,'Approaching discharge','','Approaching charge-peak'],[1,'Entladung nähert sich','','Annäherung an den Ladespitzenwert']],[[0,0.039,0.8],[2,'charge rate near minimum','','charge rate near maximum'],[2,'Laderate nahe Minimum','','Laderate nahe Maximum']]]
 mapping=['Temperature','SOC','Charge rate']
 
 def battery_temp_is_ok(temperature,language):
