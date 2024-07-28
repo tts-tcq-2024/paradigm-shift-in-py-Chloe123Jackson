@@ -23,7 +23,7 @@ def deliver_range_message(index_number,variable_value,language):
         return range_list[index_number][language][range_list[index_number][0].index(x)]
         break
     else:
-        return variable_value
+        return index_number
         break
       
 def check_out_of_range(message):
