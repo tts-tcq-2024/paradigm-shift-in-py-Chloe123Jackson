@@ -30,7 +30,7 @@ def check_out_of_range(message):
   return True
   
 def print_message(message):
-  if check_out_of_range(message):
+  if not check_out_of_range(message):
     print(mapping[message], "Out of range")
   else:
     print(message)
