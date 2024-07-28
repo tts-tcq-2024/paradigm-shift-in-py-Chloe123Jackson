@@ -2,15 +2,18 @@ range_list=[[[0,2.251,42.749,45],[0,'Temperature near minimum','','Temperature n
 mapping=['Temperature','SOC','Charge rate']
 def battery_temp_is_ok(temperature):
   message=deliver_range_message(0,temperature)
-  return print_message(message)
+  print_message(message)
+  return check_out_of_range(message)
   
 def battery_soc_is_ok(soc):
   message=deliver_range_message(1,soc)
-  return print_message(message)
+  print_message(message)
+  return check_out_of_range(message)
   
 def battery__cr_is_ok(charge_rate):
   message=deliver_range_message(2,charge_rate)
-  return print_message(message)
+  print_message(message)
+  return check_out_of_range(message)
   
 
 def deliver_range_message(index_number,variable_value):
@@ -21,12 +24,15 @@ def deliver_range_message(index_number,variable_value):
     else:
         return variable_value
         break
-  
+      
+def check_out_of_range(message):
+  if message in range(0,3):
+    return False
+  return True
   
 def print_message(message):
-  if message in range(0,3):
+  if check_out_of_range(message):
     print(mapping[message], "Out of range")
-    return False
   else:
     print(message)
     return True
